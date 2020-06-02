@@ -14,7 +14,7 @@ The only dependency for this library is `smbus2` so provided your I2C device is 
 
 from ina260.controller import Controller
 
-c = Controller()
+c = Controller(address=0x40)
 
 print(c.voltage())
 print(c.current())
@@ -23,6 +23,8 @@ print(c.power()))
 ```
 
 see the example script in the repository. Note that the power measurement is usually not the same as voltage times current unless you read all three registers instantaneously.
+
+Obviously check what address you've set the chip to (there is a table in the datasheet).
 
 ## Hardware notes
 
