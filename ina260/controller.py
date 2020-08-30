@@ -86,7 +86,7 @@ class Controller:
         if current & (1 << 15):
             current -= 65535
 
-	current *= 0.00125 # 1.25mA/bit
+        current *= 0.00125 # 1.25mA/bit
 
         return current
 
