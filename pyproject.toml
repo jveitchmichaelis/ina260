@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ina260"
+version = "0.0.2"
+description = "A generic Python library for the INA260 power monitor chip"
+authors = ["Josh Veitch-Michaelis <j.veitchmichaelis@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/jveitchmichaelis/ina260"
+repository = "https://github.com/jveitchmichaelis/ina260"
+
+[tool.poetry.dependencies]
+python = "~2.7 || ^3.5"
+smbus2 = "^0.3.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3"
+pytest-cov = "^2.8"
+coverage-badge = "^1.0.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
