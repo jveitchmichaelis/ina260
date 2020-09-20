@@ -63,7 +63,7 @@ class Controller:
 
         """
         res = self.bus.read_i2c_block_data(self.address, reg, 2)
-        return ''.join([chr(i) for i in res])
+        return bytearray(res)
 
     def voltage(self):
         """
